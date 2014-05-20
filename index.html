@@ -1,0 +1,1472 @@
+﻿<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<title>RUBIK'S CUBE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- // IE  // -->
+	<!--[if IE]><script src="html5.js"></script><![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/current.js"></script>    
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+<script>
+jQuery(document).ready(function($){
+	var full_s_w = $(window).width();
+	var full_s_h = $(window).height();
+	var full_d_w = $(".mydiv").width();
+	var full_d_h = $(".mydiv").height();
+	$(".mydiv").css({'position' : 'fixed'});
+	$(".mydiv").css({'top' : (full_s_h/2) + 'px'});
+	$(".mydiv").css({'left' : (full_s_w/2) + 'px'});
+	$(".mydiv").css({'margin-top' : -(full_d_h/2) + 'px'});
+	/*$(".mydiv").css({'margin-left' : -(full_d_w/2) + 'px'});*/
+	/*$('#mainDiv').center();*/
+  });
+</script>   
+</head>
+<body class="animated" data-animated="fadeIn">
+    <!-- #page -->
+    <div id="page"> 
+        <!-- home content -->  
+        <section class="page_section" id="home" style="background: url('images/slider/2.jpg');width:100%;text-align:center;background-size: cover;background-repeat: no-repeat;color:#ffffff;"> 
+        	<!--Slider-->
+            <div class="full_slider">
+				<div class="gradient-overlay overlay"></div>
+			 	<!-- END REVOLUTION SLIDER -->
+                <!--<div class="home_banner" style="z-index:9992;"></div>-->
+                <div class="home_content" style="z-index:9991;">                	
+                    <img class="log" src="images/slider/static_elements/banner.png" alt="" style="background-position: 0; ">
+                    <h1 style="z-index:9999;color: #ffffff;font-family: 'Bree Serif', serif;">2014 Rubik's Cube<br>Indian National Championships</h1>
+                    <img src="images/slider/static_elements/line.png" class="slide_line" alt="" />
+                	<a href="#about" class="next_section" style="z-index:9991;"></a>
+                </div>
+                
+             </div>          
+            <!--//Slider-->
+        </section>
+        
+        <!-- header section -->
+        <section id="top">
+            <header> 
+            	<div class="container">                                
+                    <!-- logo -->
+                    <div id="logo">
+                        <a href="index.html#home"><img class="logo_def" src="images/slider/static_elements/banner.png" height="40" alt="" /><img class="logo_retina" height="40" alt="" src="images/slider/static_elements/banner.png" /></a>
+                    </div>
+                    <div class="fright">
+                        <!-- menu -->
+                        <nav class="navmenu">
+                            <ul class="menu">
+                                <li class="scrollable"><a href="#about">About</a></li>
+                                <li class="scrollable"><a href="#events">Events</a></li>                            
+                                <li class="scrollable"><a href="#schedule">Schedule</a></li>
+                                <li class="scrollable"><a href="#venue">Venue</a></li>
+                                <li class="scrollable"><a href="#register">Registration</a></li>
+                                <li class="scrollable"><a href="#competitors">Competitors</a></li>
+                                <li class="scrollable"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav><!-- end nav -->
+                        <div class="clear"></div> 
+                    </div>
+                    <div class="clear"></div>
+            	</div>
+            </header>               
+        </section><!-- //header section -->
+              
+		<section class="page_section pattern-bg" id="about">  
+            <header>
+                <div class="container">
+                	<h2 class="up">About the Competition</h2>
+                    <p class="up">Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+                	<p class="up second" style="">The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should be familiar with the regulations. The competition is open to all competitors regardless of experience and skill with the Rubik's Cube, but certain event-based time limits will be in place as explained on the events tab. Media personnel should contact the organizational staff regarding media opportunities.</p>
+                </div>               
+            </header>
+        <!-- section header -->
+            <header class="scrolled date_loc-overlay-bg">
+                <div class="container">
+                    <h2>Date &amp; Location</h2>
+                    <img src="images/slider/static_elements/line.png" class="slide_line" alt="" />
+                    <div class="row">
+                        <div class="col-md-6" style="margin: auto;float: none;">
+                            <div class="service">
+                                    <img src="images/dates.png">
+                                    <p style="margin-top:30px !important;">Liberty Science Center, Liberty State Park, 222 Jersey City Boulevard, Jersey City, NJ 07305</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end .container -->
+            </header>
+            <!-- //section header -->
+        </section>
+            
+        <!-- events content-->
+        <section class="page_section pattern-bg" id="events" >
+            <!-- section header -->
+            <header>
+                <div class="container">
+                    <h2>Events</h2>
+                    <p>Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+                </div><!-- end .container -->
+            </header>
+            <!-- //section header -->
+            <!-- section content -->
+            <div class="content_section container pad_b81">            	
+                <div class="row">
+                    <!-- Portfolio -->
+                    <div class="image-grid" id="list">                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 2</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 3</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 4</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										3x3 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">3:00</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">150</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">50</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										4x4 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Best of 2/Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">1:30</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">4:00</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										5x5 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Best of 2/Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">2:20</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">5:00</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">80</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										6x6 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Best of 1/Mean of 3</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">4:30</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">10:00</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Mean of 3</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										7x7 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Best of 1/Mean of 3</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">6:30</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">10</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Mean of 3</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->                                                                    
+                        <div class="element" style="padding:0 13px;">                                
+                        	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front tile-gradient-overlay">
+										<div class="event-title">
+										2x2 Speedsolve
+										</div>
+										<div class="event-image">
+											<img src="images/slider/static_elements/banner.png" width="200">
+										</div>
+									</div>
+									<div class="back tile-gradient-overlay">
+										<div class="rounds-container fist">
+											<div class="rounds-title round1-bgcolor">Round 1</div>
+											<div class="rounds-contents">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents lef">
+												Cut off : <span class="rounds-contents-inner">...</span>
+											</div>
+											<div class="rounds-contents righ">
+												Time Limit : <span class="rounds-contents-inner">1:30</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round2-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">100</span>
+											</div>
+										</div>
+										<div class="rounds-container">
+											<div class="rounds-title round3-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">32</span>
+											</div>
+										</div>
+										<div class="rounds-container mar-bottom">
+											<div class="rounds-title round4-bgcolor">Round 1</div>
+											<div class="rounds-contents lef">
+												Format : <span class="rounds-contents-inner">Avg of 5</span>
+											</div>
+											<div class="rounds-contents righ">
+												Num : <span class="rounds-contents-inner">16</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div><!-- .element -->
+                    </div><!-- .portfolio_block -->
+            	</div>
+                <div class="clear"></div>                
+            </div>
+			<!-- //section content -->            
+        </section>
+        
+        <!-- about content-->
+        <section class="page_section" id="schedule">
+        	<header class="scrolled schedule-overlay-bg" style="padding-bottom: 10px;">
+            <!-- section header -->
+            <div class="content_section container"> 
+            <h2>Schedule</h2>
+            <img src="images/slider/static_elements/line.png" class="slide_line" alt="" />
+            <p style="padding-bottom: 42px;">Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+            <div class="row">
+            	<p class="note">
+	            	<span style="float:left;padding-bottom: 15px;"><span class="second-item-content location1" style="float:left;display:inline-block;margin:3px 10px 0 0;"></span><span style="float:left;margin-right:30px;">Main Stage</span></span>
+	            	<span style="float:left;padding-bottom: 15px;"><span class="second-item-content location2" style="float:left;display:inline-block;margin:3px 10px 0 0;"></span><span style="float:left;margin-right:30px;">Side Stage</span></span>
+	            	<span style="float:left;padding-bottom: 15px;"><span class="second-item-content location3" style="float:left;display:inline-block;margin:3px 10px 0 0;"></span><span style="float:left;">Long Event Area</span></span>
+	            </p>
+            	<div class="col-md-4 schedule-col">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day">Friday</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">6X6 round1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">9:00 - 10:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">3x3 With Feet Final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">9:00 - 11:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Multi Blind</div>
+	            			<div class="second-item"><div class="second-item-content location3"></div></div>
+	            			<div class="third-item">9:00 - 13:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">7x7 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">10:30 - 12:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Rubik's Clock round 1</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">11:00 - 12:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">2x2 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">13:00 - 14:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Skewb round 1</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">13:30 - 14:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">5x5 Blindfolded</div>
+	            			<div class="second-item"><div class="second-item-content location3"></div></div>
+	            			<div class="third-item">14:00 - 17:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">5x5 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">14:30 - 16:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">Pyraminx round 1</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">14:30 - 17:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Blindfolded round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">16:00 - 17:30</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="first-item">3x3 Fewest Moves</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">17:30 - 18:30</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-4 schedule-col">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day">Saturday</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Onehanded round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">9:00 - 10:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">Megaminx round 1</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">9:00 - 11:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Multi Blind</div>
+	            			<div class="second-item"><div class="second-item-content location3"></div></div>
+	            			<div class="third-item">9:00 - 13:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">4x4 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">10:30 - 12:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Square-1 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">12:30 - 14:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">3x3 round 1</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">13:00 - 15:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Rubik's Clock final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">14:30 - 15:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">5x5 round 2</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">15:00 - 16:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Pyraminx round 2</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">15:30 - 16:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">2x2 round 2</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">16:00 - 16:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Onehanded round 2</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">16:30 - 17:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">Megaminx final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">16:30 - 18:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">4x4 round 2</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">17:00 - 18:00</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="first-item">3x3 Fewest Moves</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">18:00 - 18:00</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-4 schedule-col last-col">
+            		<div style="width: 100%;display: inline-block">
+            			<div class="day">Sunday</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">5x5 round 3</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">9:00 - 9:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">Square-1 Final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">9:00 - 11:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">4x4 round 3</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">9:30 - 10:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">6x6 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">10:00 - 10:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 round 2</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">10:30 - 11:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">4x4 Blindfolded</div>
+	            			<div class="second-item"><div class="second-item-content location3"></div></div>
+	            			<div class="third-item">10:30 - 13:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Onehanded round 3</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">11:30 - 12:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">2x2 round 3</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">12:30 - 13:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Pyraminx final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">12:30 - 14:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">7x7 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">13:00 - 13:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 round 3</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">13:30 - 14:00</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">5x5 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">14:00 - 14:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">Skewb final</div>
+	            			<div class="second-item"><div class="second-item-content location2"></div></div>
+	            			<div class="third-item">14:00 - 14:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">4x4 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">14:30 - 15:00</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">2x2 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">15:00 - 15:30</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="first-item">3x3 Onehanded final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">15:00 - 15:30</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="first-item">3x3 Blindfolded final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">15:30 - 16:00</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="first-item">3x3 final</div>
+	            			<div class="second-item"><div class="second-item-content location1"></div></div>
+	            			<div class="third-item">16:00 - 17:00</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+	</div>
+</header>
+            <!-- //section header -->
+                    
+        </section> 
+         
+        <!-- venue content-->
+        <section class="page_section pattern-bg" id="venue">
+            <!-- section header -->
+            <header>
+                <div class="container">
+                    <h2>Venue</h2>
+                    <p>Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+                	<!--<h4 style="margin-bottom: 8px;margin-top: 10px;">BY AIR</h4>
+                	<p>The Chhatrapati Shivaji Domestic Airport is located at Vile Parle (east), Mumbai. The nearest station from the Domestic terminal is Vile Parle, also connected to JVPD scheme (Juhu Vile Parle Development scheme). From the airport terminal, cabs and rickshaws are easily available to get you to the college. The estimated travel time is about 20 minutes.</p>
+                	<h4 style="margin-bottom: 8px;margin-top: 10px;">BY RAIL</h4>
+                    <p>Road Distance or driving distance from Mumbai CST to Vile Parle is 19 kms . It is advisable to board a local train and get off at Vile Parle Station. From there, you can hire a rickshaw to reach DJ Sanghvi.</p>
+                	<h4 style="margin-bottom: 8px;margin-top: 10px;">LODGING</h4>
+                	<p>A block of hotel rooms at the Ramada Plaza Hotel, Newark will be available for reservation.</p>
+                	<p>The Ramada Plaza Hotel has offered the above special group rates.  Cancellation policy is 30 days prior to arrival to avoid penalty.  Guests must call in to reserve their room under the block code CGMAN1 and provide a credit card to guarantee the reservation.  Rooms will only be held until June 30, 2014.</p>-->
+                	<div class="row">
+                        <div class="col-md-4">
+                            <div class="service">
+                            	<a href="javascript:void(0);">
+                                    <span class="service_icon icon-air"></span>
+                                    <div class="bubble">
+	                                    <span class="service_title" style="color:#666666;">Airways</span>
+	                                    <p>Lorem ipsum dolor a eget sit eget amet, consectetur adipiscing elit in sit amet aliquet odio eget, nec vehicula eget mauris.</p> 
+                                    </div>
+                                </a>                               
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service">
+                            	<a href="javascript:void(0);">
+                                    <span class="service_icon icon-train"></span>
+                                    <div class="bubble">
+	                                    <span class="service_title" style="color:#666666;">Train</span>
+	                                    <p>Lorem ipsum dolor a eget sit eget amet, consectetur adipiscing elit in sit amet aliquet odio eget, nec vehicula eget mauris.</p>   
+                                    </div>                             
+                            	</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service">
+                            	<a href="javascript:void(0);">
+                                    <span class="service_icon icon-lodging"></span>
+                                    <div class="bubble">
+	                                    <span class="service_title" style="color:#666666;">Lodging</span>
+	                                    <p>Lorem ipsum dolor a eget sit eget amet, consectetur adipiscing elit in sit amet aliquet odio eget, nec vehicula eget mauris.</p>                                
+                            		</div>
+                            	</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-wrapper" style="float:none;">
+	            		<div id="google_map" class="border-rad map"></div>
+	            	</div>
+                </div><!-- end .container -->
+            </header>
+            <!-- //section header -->   
+                      
+        </section> 
+                
+        <!--register-->
+        <section class="page_section" id="register">
+        <!-- section header -->
+            <header class="scrolled register-overlay-bg">
+                <div class="container">
+                    <h2>Register</h2>
+            		<img src="images/slider/static_elements/line.png" class="slide_line" alt="" />
+                    <p>Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+                    <div class="btns">
+                    	<a href="register.html" target="_blank" class="shortcode_button btn_type4">Click to register</a>
+                    </div>
+                </div><!-- end .container -->
+            </header>
+            <!-- //section header -->
+        </section>
+            
+            
+            <!-- competitors content-->
+        <section class="page_section pattern-bg" id="competitors">
+            <!-- section header -->
+            <header>
+                <div class="container">
+                    <h2>Competitors</h2>
+                    <p>Etiam cursus velit magna, at euismod libero elementum sit amet, in hac habitasse platea dictumst donec nec pretium nisi, ut tempus lectus sed porta viverra tellus vitae ultricies tellus egestas.</p>
+                	<div class="btns">
+                    	<a href="competitors.html" target="_blank" class="shortcode_button competitors-btn">View</a>
+                    </div>
+                </div><!-- end .container -->
+            </header>
+            <!-- //section header -->      
+        </section> 
+                
+        <!--footer(contact)-->
+        <div class="footer contact_footer contact-overlay-bg" id="contact">
+        	<div class="contact_form">
+                <div class="container">
+                	<h2>Get in touch with us</h2>
+            		<img src="images/slider/static_elements/line.png" class="slide_line" alt="" />
+                    <div class="contact_info">
+                    	<p><i class="fa fa-home"></i> 5512 Lorem Ipsum Vestibulum 666/13. Elementum sit amet, in hac habitasse platea dictumst donec.</p>
+                        <p><i class="fa fa-phone"></i> +1 800 789 50 12, +1 800 450 6935, +1 800 450 6935</p>
+                    </div>
+                    <div class="form_wrap">
+                        <div id="note"></div>
+                        <div id="fields"> 
+                            <form id="ajax-contact-form" action="#">                                
+                                <p class="requir_ed"><input type="text" name="name" value="Name" title="Name" /></p>
+                                <p class="requir_ed"><input type="text" name="email" value="Email" title="Email" /></p>
+                                <p><input type="text" name="subject" value="Subject" title="Subject" /></p>                           
+                                <p class="requir_ed"><textarea name="message" id="message" title="Message">Message</textarea></p> 
+                                <p><input class="send_btn" type="submit" value="Send message"></p> 
+                            </form> 
+                        </div>
+                	</div>
+                </div>
+            </div>
+                    	
+        	<div class="container"> 
+                <div class="copyright">&copy; 2014 RUBIK'S CUBE Indian National Championships. All rights reserved.</div>
+            </div>        	
+        </div>
+        <!--//footer-->        
+    </div><!-- end #page --> 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>		
+	<script type="text/javascript" src="js/custom-map.js"></script>    		
+</body>
+</html>

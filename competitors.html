@@ -1,0 +1,856 @@
+﻿<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<title>RUBIK'S CUBE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- // IE  // -->
+	<!--[if IE]><script src="html5.js"></script><![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/current.js"></script>    
+    <script src="js/jquery.sticky.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		    	$('#navig-itms').css({'display':'none'});
+		        return false;
+		      }
+		    }
+		  });
+		});
+    	function navig(){
+    		if(document.getElementById('navig-itms').style.display=='block')
+    			document.getElementById('navig-itms').style.display='none';
+    		else
+    			document.getElementById('navig-itms').style.display='block';
+    	}
+    </script>
+</head>
+<body class="animated" data-animated="fadeIn">
+	<div class="navigation" id="nav-btn">
+		<img src="images/btn_menu.png" onclick="navig();">
+	</div>
+	<div class="nav-items" id="navig-itms">
+		<ul class="menu-itms" style="background-color:#ffffff;">
+	    	<li onclick="navig();"><a href="#1">Registration List</a></li>
+	        <li onclick="navig();"><a href="#2">Psych Sheet</a></li>                            
+	        <li class="last1" onclick="navig();"><a href="#3">Heat Sheet</a></li>
+	    </ul>
+	</div>
+	<section class="page_section register-overlay-bg scrolled-bg" id="1">
+		<header class="scrolled" style="padding-top:50px;">
+			<div class="container">
+				<h2>Competitors</h2>
+				<div class="col-md-12 compet-col marg">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day title1">Registration List(Accepted)</div>
+            			<div class="schedule-rows bg2 bold">
+	            			<div class="name1 bg2">Name</div>
+	            			<div class="country1">Country</div>
+	            			<div class="col-item bg2">2X2</div>
+	            			<div class="col-item">3X3</div>
+	            			<div class="col-item bg2">4X4</div>
+	            			<div class="col-item">5X5</div>
+	            			<div class="col-item bg2">6X6</div>
+	            			<div class="col-item">7X7</div>
+	            			<div class="col-item bg2">OH</div>
+	            			<div class="col-item">BLD</div>
+	            			<div class="col-item bg2">FMC</div>
+	            			<div class="col-item">FEET</div>
+	            			<div class="col-item bg2">Magic</div>
+	            			<div class="col-item">M. Magic</div>
+	            			<div class="col-item bg2">Sq 1</div>
+	            			<div class="col-item">Pyra</div>
+	            			<div class="col-item bg2">Mega</div>
+	            			<div class="col-item">Clock</div>
+	            			<div class="col-item bg2">4 BLD</div>
+	            			<div class="col-item">5 BLD</div>
+	            			<div class="col-item bg2">MBLD</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-12 compet-col marg" style="margin-top:15px;">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day title1">Registration List(Pending)</div>
+            			<div class="schedule-rows bg2 bold">
+	            			<div class="name1 bg2">Name</div>
+	            			<div class="country1">Country</div>
+	            			<div class="col-item bg2">2X2</div>
+	            			<div class="col-item">3X3</div>
+	            			<div class="col-item bg2">4X4</div>
+	            			<div class="col-item">5X5</div>
+	            			<div class="col-item bg2">6X6</div>
+	            			<div class="col-item">7X7</div>
+	            			<div class="col-item bg2">OH</div>
+	            			<div class="col-item">BLD</div>
+	            			<div class="col-item bg2">FMC</div>
+	            			<div class="col-item">FEET</div>
+	            			<div class="col-item bg2">Magic</div>
+	            			<div class="col-item">M. Magic</div>
+	            			<div class="col-item bg2">Sq 1</div>
+	            			<div class="col-item">Pyra</div>
+	            			<div class="col-item bg2">Mega</div>
+	            			<div class="col-item">Clock</div>
+	            			<div class="col-item bg2">4 BLD</div>
+	            			<div class="col-item">5 BLD</div>
+	            			<div class="col-item bg2">MBLD</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="name1 bg2">Adam Walker</div>
+	            			<div class="country1">USA</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">X</div>
+	            			<div class="col-item">X</div>
+	            			<div class="col-item bg2">-</div>
+	            			<div class="col-item">-</div>
+	            			<div class="col-item bg2">-</div>
+            			</div>
+            		</div>
+            	</div>
+			</div>
+		</header>
+	</section>
+	<section class="page_section contact-overlay-bg scrolled-bg" id="2">
+		<header class="scrolled">
+			<div class="container">
+				<div class="col-md-12 compet-col marg">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day title1">Psych Sheet</div>
+            			<div class="schedule-rows bg2 bold">
+	            			<div class="sn">SN</div>
+	            			<div class="name">Name</div>
+	            			<div class="country">Country</div>
+	            			<div class="time">Time</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">1</div>
+	            			<div class="name">Bharat</div>
+	            			<div class="country">USA</div>
+	            			<div class="time">8:23</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">2</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">3</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">4</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">5</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">6</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">7</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">8</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">9</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">10</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">11</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="sn">12</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            		</div>
+            	</div>
+			</div>
+		</header>
+	</section>
+	<section class="page_section schedule-overlay-bg scrolled-bg" id="3">
+		<header class="scrolled">
+			<div class="container">
+				<div class="col-md-12 compet-col marg">
+            		<div style="width: 100%;display: inline-block;">
+            			<div class="day title1">Heat Sheet</div>
+            			<div class="schedule-rows bg2 bold">
+	            			<div class="sn">Heat</div>
+	            			<div class="name">Name</div>
+	            			<div class="country">Country</div>
+	            			<div class="time">Time</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">1</div>
+	            			<div class="name">Bharat</div>
+	            			<div class="country">USA</div>
+	            			<div class="time">8:23</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">2</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">3</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">4</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">5</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">6</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">7</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">8</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">9</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2">
+	            			<div class="sn">10</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg1">
+	            			<div class="sn">11</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            			<div class="schedule-rows bg2 last-item">
+	            			<div class="sn">12</div>
+	            			<div class="name">John Brechon</div>
+	            			<div class="country">Australia</div>
+	            			<div class="time">2:49.31</div>
+            			</div>
+            		</div>
+            	</div>	
+			</div>
+		</header>
+	</section>
+</body>
+
+</html>
